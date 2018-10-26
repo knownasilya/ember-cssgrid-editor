@@ -1,0 +1,13 @@
+<h2 id="title">Welcome to Ember</h2>
+
+{{outlet}}
+
+<GridEditor @columns={{3}}>
+  {{#each this.items as |item|}}
+    <GridEditorItem
+      @onChange={{action (mut item.gridOptions)}}
+    >
+      {{item.name}}
+    </GridEditorItem>
+  {{/each}}
+</GridEditor>

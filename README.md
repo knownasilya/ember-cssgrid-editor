@@ -1,24 +1,32 @@
 ember-cssgrid-editor
 ==============================================================================
 
-[Short description of the addon.]
+Edit the layout of a CSS Grid visually.
 
 Installation
-------------------------------------------------------------------------------
+------------
 
-```
+```sh
 ember install ember-cssgrid-editor
 ```
 
-
 Usage
-------------------------------------------------------------------------------
+-----
 
-[Longer description of how to use the addon in apps.]
-
+```hbs
+<GridEditor @columns={{3}}>
+  {{#each this.items as |item|}}
+    <GridEditorItem
+      @onChange={{action (mut item.gridOptions)}}
+    >
+      {{item.name}}
+    </GridEditorItem>
+  {{/each}}
+</GridEditor>
+```
 
 Contributing
-------------------------------------------------------------------------------
+------------
 
 ### Installation
 

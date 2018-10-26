@@ -1,0 +1,43 @@
+.grid-editor {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-editor-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: white;
+  box-shadow: -1px 2px 5px 0px rgba(156, 156, 156, 0.4);
+  padding: 0.5rem;
+}
+
+.drag-top {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  text-align: center;
+}
+
+.drag-left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.drag-right {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  text-align: right;
+}
+
+.drag-down {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  text-align: center;
+}
+
+.content {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 1rem;
+  text-align: center;
+}
