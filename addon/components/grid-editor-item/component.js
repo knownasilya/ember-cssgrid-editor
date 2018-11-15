@@ -39,6 +39,11 @@ export default Component.extend({
       }
 
       return `
+        -ms-grid-column-start: ${gridColumnStart};
+        -ms-grid-column-end: ${gridColumnEnd};
+        -ms-grid-row-start: ${gridRowStart};
+        -ms-grid-row-end: ${gridRowEnd};
+        
         grid-column-start: ${gridColumnStart};
         grid-column-end: ${gridColumnEnd};
         grid-row-start: ${gridRowStart};
