@@ -2,6 +2,7 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
 }
 
 .grid-editor-item {
