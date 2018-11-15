@@ -3,6 +3,8 @@ ember-cssgrid-editor
 
 Edit the layout of a CSS Grid visually.
 
+> This is at the start of developemnt, not for use yet.
+
 Installation
 ------------
 
@@ -15,8 +17,9 @@ Usage
 
 ```hbs
 <GridEditor @columns={{3}}>
-  {{#each this.items as |item|}}
+  {{#each this.items as |item index|}}
     <GridEditorItem
+      @itemIndex={{index}}
       @onChange={{action (mut item.gridOptions)}}
     >
       {{item.name}}
