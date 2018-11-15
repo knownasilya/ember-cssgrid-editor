@@ -11,6 +11,8 @@ export default Controller.extend({
       { name: 'd' },
       { name: 'e' },
       { name: 'f' },
+      { name: 'g' },
+      { name: 'h' },
     ]);
   }
 });
