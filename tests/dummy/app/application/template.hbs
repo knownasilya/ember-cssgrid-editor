@@ -3,8 +3,9 @@
 {{outlet}}
 
 <GridEditor @columns={{3}}>
-  {{#each this.items as |item|}}
+  {{#each this.items as |item index|}}
     <GridEditorItem
+      @itemIndex={{index}}
       @onChange={{action (mut item.gridOptions)}}
     >
       {{item.name}}

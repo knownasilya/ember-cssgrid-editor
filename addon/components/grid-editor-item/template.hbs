@@ -1,8 +1,9 @@
-
-<div class='content'>
-  {{yield}}
+<div class='grid-editor-item' style={{this.style}}>
+  <div class='content'>
+    {{yield}}
+  </div>
+  <span class='drag-left'></span>
+  <span class='drag-down' role='button' onclick={{action 'down'}}>down</span>
+  <span class='drag-right' role='button' onclick={{action 'right'}}>right</span>
+  <span class='drag-top'></span>
 </div>
-<span class='drag-left'>left</span>
-<span class='drag-down'>down</span>
-<span class='drag-right'>right</span>
-<span class='drag-top'>top</span>
